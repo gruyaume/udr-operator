@@ -1,0 +1,26 @@
+name: udr-operator
+display-name: 5G UDR operator
+summary: 5G UDR operator
+description: 5G UDR operator
+
+containers:
+  udr:
+    resource: udr-image
+    mounts:
+      - storage: udr-volume
+        location: /etc/udr/
+
+resources:
+  udr-image:
+    type: oci-image
+    description: OCI image for 5G udr
+    upstream-source: omecproject/5gc-udr:master-35eb7b7
+
+storage:
+  udr-volume:
+    type: filesystem
+    minimum-size: 1M
+
+requires:
+  nrf:
+    interface: nrf
