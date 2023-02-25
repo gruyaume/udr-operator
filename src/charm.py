@@ -127,7 +127,7 @@ class UDROperatorCharm(CharmBase):
                     "udr": {
                         "override": "replace",
                         "startup": "enabled",
-                        "command": f"./udr --udrcfg {BASE_CONFIG_PATH}/{CONFIG_FILE_NAME}",
+                        "command": f"/free5gc/udr/udr --udrcfg {BASE_CONFIG_PATH}/{CONFIG_FILE_NAME}",
                         "environment": self._environment_variables,
                     },
                 },

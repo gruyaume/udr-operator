@@ -68,7 +68,7 @@ class TestCharm(unittest.TestCase):
             "services": {
                 "udr": {
                     "override": "replace",
-                    "command": "./udr --udrcfg /etc/udr/udrcfg.conf",
+                    "command": "/free5gc/udr/udr --udrcfg /etc/udr/udrcfg.conf",
                     "startup": "enabled",
                     "environment": {
                         "GRPC_GO_LOG_VERBOSITY_LEVEL": "99",
