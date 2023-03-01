@@ -1,7 +1,7 @@
 configuration:
   mongodb:
-    name: free5gc
-    url: mongodb://mongodb-arbiter-headless
+    name: {{ database_name }}
+    url: {{ database_url }}
   nrfUri: {{ nrf_url }}
   plmnSupportList:
   - plmnId:

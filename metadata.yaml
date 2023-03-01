@@ -24,3 +24,5 @@ storage:
 requires:
   nrf:
     interface: nrf
+  database:
+    interface: mongodb_client
